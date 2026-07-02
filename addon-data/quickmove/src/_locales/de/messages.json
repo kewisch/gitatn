@@ -1,0 +1,184 @@
+{
+    "extensionName": {
+        "message": "Schnelles Nachrichtenverschieben"
+    },
+    "extensionDescription": {
+        "message": "Verschiebe schnell Nachrichten in andere Ordner mit der Tastatur"
+    },
+    "extensionShortName": {
+        "message": "Schnell Verschieben"
+    },
+    "commandMoveDescription": {
+        "message": "Selektierte Nachrichten verschieben"
+    },
+    "commandCopyDescription": {
+        "message": "Selektierte Nachrichten kopieren"
+    },
+    "commandGotoDescription": {
+        "message": "Zum Ordner wechseln"
+    },
+    "commandTagDescription": {
+        "message": "Schlagwort anwenden"
+    },
+    "windowWarning": {
+        "message": "Es wird empfohlen Schnelles Nachrichtenverschieben zur Hauptsymbolleiste hinzuzufügen. Bitte passen Sie ihre Symbolleiste an um die Schaltfläche hinzuzufügen."
+    },
+    "actionMove": {
+        "message": "Verschieben"
+    },
+    "actionCopy": {
+        "message": "Kopieren"
+    },
+    "actionGoto": {
+        "message": "Zum Ordner"
+    },
+    "actionTag": {
+        "message": "Schlagwort"
+    },
+    "layout": {
+        "message": "Pop-up Layout"
+    },
+    "layoutAuto": {
+        "message": "Automatisch"
+    },
+    "layoutWide": {
+        "message": "Immer breit"
+    },
+    "layoutCompact": {
+        "message": "Immer kompakt"
+    },
+    "markAsRead": {
+        "message": "Nachrichten beim verschieben als gelesen markieren"
+    },
+    "showFolderPath": {
+        "message": "In der Suche den vollständigen Pfad für jeden Ordner anzeigen"
+    },
+    "skipArchive": {
+        "message": "Nie den Archivordner anzeigen"
+    },
+    "maxRecentFolders": {
+        "message": "Anzahl der zuletzt verwendeten Ordner in der Suche"
+    },
+    "useLegacyShortcuts": {
+        "message": "Veraltete Tastenkürzel erzwingen"
+    },
+    "useLegacyShortcutsTitle": {
+        "message": "Nutzt ⇧M als Tastenkürzel für das Verschieben von Nachrichten"
+    },
+    "metaActionWarning": {
+        "message": "Um zwischen Aktionen zu wechseln muss jetzt Strg/⌘+Pfeiltaste verwendet werden um Tastaturkonflikte im Textfeld zu vermeiden."
+    },
+    "defaultFoldersSpecific": {
+        "message": "Bestimmte Ordner"
+    },
+    "showInstructions": {
+        "message": "Anleitung anzeigen"
+    },
+    "defaultFoldersAll": {
+        "message": "Alle Ordner"
+    },
+    "maxRecentFoldersTitle": {
+        "message": "Verändert die Anzahl der angezeigten kürzlich verwendeten Ordner wenn kein Suchtext eingegeben ist."
+    },
+    "defaultFoldersSearchPlaceholder": {
+        "message": "Suche einen Ordner um ihn als Standardordner anzuzeigen"
+    },
+    "excludedFoldersSearchPlaceholder": {
+        "message": "Suche einen Ordner um ihn auszuschließen"
+    },
+    "defaultFoldersTitle": {
+        "message": "Standardordner"
+    },
+    "defaultFoldersRecent": {
+        "message": "Kürzlich genutzte Ordner"
+    },
+    "excludedFoldersTitle": {
+        "message": "Ausgeschlossene Ordner"
+    },
+    "tagsViewMissingWarning": {
+        "message": "Bitte aktivieren Sie die 'Schlagwörter' Ordneransicht um zu Schlagwortordner zu navigieren."
+    },
+    "recentStrategy": {
+        "message": "Ordnerstrategie"
+    },
+    "recentStrategyAccessed": {
+        "message": "Kürzlich zugegriffene Ordner"
+    },
+    "recentStrategyModified": {
+        "message": "Kürzlich modifizierte Ordner"
+    },
+    "translate": {
+        "message": "Übersetzung in deine Sprache"
+    },
+    "showShortcuts": {
+        "message": "Tastaturkürzel ändern"
+    },
+    "partialMatchFullPath": {
+        "message": "Im gesamten Ordnerpfad suchen"
+    },
+    "searchAccountName": {
+        "message": "Auch innerhalb des Kontonamens suchen"
+    },
+    "notificationActive": {
+        "message": "Zeige eine Benachrichtigung für jeden Vorgang"
+    },
+    "operationMenuItemsTitle": {
+        "message": "Angezeigte Vorgänge"
+    },
+    "menuItemActionWarning": {
+        "message": "Es muss mindestens ein Vorgang gewählt werden."
+    },
+    "operationAction.move": {
+        "message": "$num_messages$ Nachricht wurde in den Ordner $destination$ verschoben;$num_messages$ Nachrichten wurden in den Ordner $destination$ verschoben",
+        "placeholders": {
+            "num_messages": {
+                "content": "$1"
+            },
+            "destination": {
+                "content": "$2"
+            }
+        }
+    },
+    "operationAction.copy": {
+        "message": "$num_messages$ Nachricht wurde in den Ordner $destination$ kopiert;$num_messages$ Nachrichten wurden in den Ordner $destination$ kopiert",
+        "placeholders": {
+            "num_messages": {
+                "content": "$1"
+            },
+            "destination": {
+                "content": "$2"
+            }
+        }
+    },
+    "menuItemActionInfo": {
+        "message": "Wähle welche Vorgänge im Menü verfügbar sein sollen."
+    },
+    "operationAction.tag": {
+        "message": "$num_messages$ Nachricht wurde mit dem Schlagwort $destination$ versehen;$num_messages$ Nachrichten wurden mit dem Schlagwort $destination$ versehen",
+        "placeholders": {
+            "num_messages": {
+                "content": "$1"
+            },
+            "destination": {
+                "content": "$2"
+            }
+        }
+    },
+    "operationAction.tag.remove": {
+        "message": "Bei $num_messages$ Nachricht wurde das Schlagwort $destination$ entfernt;Bei $num_messages$ Nachrichten wurde das Schlagwort $destination$ entfernt",
+        "placeholders": {
+            "num_messages": {
+                "content": "$1"
+            },
+            "destination": {
+                "content": "$2"
+            }
+        }
+    },
+    "composeDestinationLabel": {
+        "message": "Zielordner (Gesendet)"
+    },
+    "composeDestinationDefaultFolder": {
+        "message": "Standardordner"
+    }
+}

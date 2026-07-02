@@ -1,0 +1,188 @@
+{
+    "extensionName": {
+        "message": "Quick Folder Move"
+    },
+    "extensionDescription": {
+        "message": "Quickly move messages into other folders using the keyboard"
+    },
+    "extensionShortName": {
+        "message": "Quick Move"
+    },
+    "commandMoveDescription": {
+        "message": "Move selected messages"
+    },
+    "commandCopyDescription": {
+        "message": "Copy selected messages"
+    },
+    "commandGotoDescription": {
+        "message": "Go to folder"
+    },
+    "commandTagDescription": {
+        "message": "Apply a tag"
+    },
+    "windowWarning": {
+        "message": "It is recommended to add Quick Folder Move to the main toolbar. Please customize your toolbar to enable the button."
+    },
+    "metaActionWarning": {
+        "message": "Switching between actions now requires using Ctrl/⌘+Arrow to avoid navigation conflicts in the text box."
+    },
+    "tagsViewMissingWarning": {
+        "message": "Please enable the 'Tags' folder view to go to tag folders."
+    },
+    "actionMove": {
+        "message": "Move"
+    },
+    "actionCopy": {
+        "message": "Copy"
+    },
+    "actionGoto": {
+        "message": "Goto"
+    },
+    "actionTag": {
+        "message": "Tag"
+    },
+    "layout": {
+        "message": "Popup layout"
+    },
+    "layoutAuto": {
+        "message": "Automatic"
+    },
+    "layoutWide": {
+        "message": "Always wide"
+    },
+    "layoutCompact": {
+        "message": "Always compact"
+    },
+    "markAsRead": {
+        "message": "Mark messages as read when moving"
+    },
+    "showFolderPath": {
+        "message": "Show full path of each folder in search box"
+    },
+    "skipArchive": {
+        "message": "Never match archive folders"
+    },
+    "maxRecentFolders": {
+        "message": "Number of recent folders to show"
+    },
+    "maxRecentFoldersTitle": {
+        "message": "Changes the number of recent folders shown when no search text is entered."
+    },
+    "recentStrategy": {
+        "message": "Folder Strategy"
+    },
+    "recentStrategyModified": {
+        "message": "Show recently modified"
+    },
+    "recentStrategyAccessed": {
+        "message": "Show recently accessed"
+    },
+    "useLegacyShortcuts": {
+        "message": "Force use of legacy shortcuts"
+    },
+    "useLegacyShortcutsTitle": {
+        "message": "Use ⇧M as the shortcut for moving messages"
+    },
+    "showInstructions": {
+        "message": "Show instructions"
+    },
+    "showShortcuts": {
+        "message": "Change Shortcuts"
+    },
+    "translate": {
+        "message": "Translate into your language"
+    },
+    "defaultFoldersTitle": {
+        "message": "Default Folders"
+    },
+    "defaultFoldersRecent": {
+        "message": "Recent folders"
+    },
+    "defaultFoldersAll": {
+        "message": "All Folders"
+    },
+    "defaultFoldersSpecific": {
+        "message": "Specific folders"
+    },
+    "defaultFoldersSearchPlaceholder": {
+        "message": "Search for a folder to add as default"
+    },
+    "excludedFoldersTitle": {
+        "message": "Excluded Folders"
+    },
+    "excludedFoldersSearchPlaceholder": {
+        "message": "Search for a folder to exclude"
+    },
+    "partialMatchFullPath": {
+        "message": "Search for keywords within the entire folder path"
+    },
+    "searchAccountName": {
+        "message": "Search for keywords also within the account name"
+    },
+    "operationAction.move": {
+        "message": "Moved $num_messages$ message to folder $destination$;Moved $num_messages$ messages to folder $destination$",
+        "description": "List all plural forms for this sentence, separated by ';', following your language's plural rules. The order must match the language's pluralization pattern: singular first, then all plural variations. Example: 'apple;apples' (English), 'pomme;pommes' (French), 'jabłko;jabłka;jabłek' (Polish), 'تفاح;تفاحة;تفاحتان;تفاحات;تفاحة;تفاح' (Arabic).",
+        "placeholders": {
+            "num_messages": {
+                "content": "$1"
+            },
+            "destination": {
+                "content": "$2"
+            }
+        }
+    },
+    "operationAction.copy": {
+        "message": "Copied $num_messages$ message to folder $destination$;Copied $num_messages$ messages to folder $destination$",
+        "description": "List all plural forms for this sentence, separated by ';', following your language's plural rules. The order must match the language's pluralization pattern: singular first, then all plural variations. Example: 'apple;apples' (English), 'pomme;pommes' (French), 'jabłko;jabłka;jabłek' (Polish), 'تفاح;تفاحة;تفاحتان;تفاحات;تفاحة;تفاح' (Arabic).",
+        "placeholders": {
+            "num_messages": {
+                "content": "$1"
+            },
+            "destination": {
+                "content": "$2"
+            }
+        }
+    },
+    "operationAction.tag": {
+        "message": "Tagged $num_messages$ message with tag $destination$;Tagged $num_messages$ messages with tag $destination$",
+        "description": "List all plural forms for this sentence, separated by ';', following your language's plural rules. The order must match the language's pluralization pattern: singular first, then all plural variations. Example: 'apple;apples' (English), 'pomme;pommes' (French), 'jabłko;jabłka;jabłek' (Polish), 'تفاح;تفاحة;تفاحتان;تفاحات;تفاحة;تفاح' (Arabic).",
+        "placeholders": {
+            "num_messages": {
+                "content": "$1"
+            },
+            "destination": {
+                "content": "$2"
+            }
+        }
+    },
+    "operationAction.tag.remove": {
+        "message": "Removed tag $destination$ from $num_messages$ message;Removed tag $destination$ from $num_messages$ messages",
+        "description": "List all plural forms for this sentence, separated by ';', following your language's plural rules. The order must match the language's pluralization pattern: singular first, then all plural variations. Example: 'apple;apples' (English), 'pomme;pommes' (French), 'jabłko;jabłka;jabłek' (Polish), 'تفاح;تفاحة;تفاحتان;تفاحات;تفاحة;تفاح' (Arabic).",
+        "placeholders": {
+            "num_messages": {
+                "content": "$1"
+            },
+            "destination": {
+                "content": "$2"
+            }
+        }
+    },
+    "notificationActive": {
+        "message": "Show a notification for each operation"
+    },
+    "operationMenuItemsTitle": {
+        "message": "Operation Menu Items"
+    },
+    "menuItemActionInfo": {
+        "message": "Choose which actions should be available in the popup menu."
+    },
+    "menuItemActionWarning": {
+        "message": "At least one item must be selected."
+    },
+    "composeDestinationLabel": {
+        "message": "Sent destination"
+    },
+    "composeDestinationDefaultFolder": {
+        "message": "Default Folder"
+    }
+}

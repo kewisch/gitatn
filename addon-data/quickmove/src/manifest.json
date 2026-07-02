@@ -1,0 +1,89 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extensionName__",
+  "description": "__MSG_extensionDescription__",
+  "version": "3.9.0",
+  "default_locale": "en",
+  "author": "Philipp Kewisch",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "quickmove@mozilla.kewis.ch",
+      "strict_min_version": "140.0",
+      "strict_max_version": "153.*"
+    }
+  },
+  "icons": {
+    "32": "images/addon.svg"
+  },
+
+  "options_ui": {
+    "page": "options/options.html"
+  },
+
+  "background": {
+    "scripts": ["background.js"],
+    "type": "module"
+  },
+
+  "permissions": [
+    "storage",
+    "compose",
+    "accountsRead",
+    "messagesRead",
+    "messagesMove",
+    "messagesTags",
+    "messagesTagsList",
+    "messagesUpdate"
+  ],
+
+  "optional_permissions": [
+    "notifications"
+  ],
+
+  "action": {
+    "default_icon": "images/addon.svg",
+    "default_popup": "popup/popup.html?action=move&allowed=move,copy,goto,tag",
+    "default_label": "__MSG_extensionShortName__"
+  },
+
+  "message_display_action": {
+    "default_icon": "images/addon.svg",
+    "default_popup": "popup/popup.html?action=move&allowed=move,copy,goto,tag",
+    "default_label": "__MSG_extensionShortName__"
+  },
+  "compose_action": {
+    "default_icon": "images/addon.svg",
+    "default_popup": "popup/popup.html?action=move&allowed=move",
+    "default_label": "__MSG_extensionShortName__"
+  },
+
+  "commands": {
+    "move": {
+      "description": "__MSG_commandMoveDescription__",
+      "suggested_key": {
+        "default": "Ctrl+Shift+N",
+        "mac": "MacCtrl+Shift+M"
+      }
+    },
+    "copy": {
+      "description": "__MSG_commandCopyDescription__"
+    },
+    "goto": {
+      "description": "__MSG_commandGotoDescription__"
+    },
+    "tag": {
+      "description": "__MSG_commandTagDescription__"
+    }
+  },
+
+  "experiment_apis": {
+    "quickmove": {
+      "schema": "api/schema.json",
+      "parent": {
+        "scopes": ["addon_parent"],
+        "paths": [["quickmove"]],
+        "script": "api/api.js"
+      }
+    }
+  }
+}

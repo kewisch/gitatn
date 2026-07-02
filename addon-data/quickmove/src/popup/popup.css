@@ -1,0 +1,261 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ * Portions Copyright (C) Philipp Kewisch */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --menu-color: #18181b;
+    --menu-background-color: #fafafa;
+
+    --item-list-focus: #d3e3f5;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --menu-color: #f4f4f5;
+    --menu-background-color: #18181b;
+
+    --item-list-focus: #4892e8;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .action-buttons label {
+    transition:
+      background-color 0.15s,
+      border-color 0.15s;
+  }
+}
+
+body,
+html {
+  background-color: var(--menu-background-color);
+  color: var(--menu-color);
+  max-width: 42em;
+  min-width: 42em;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 8px;
+  height: 600px;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+html[compact] body,
+html[compact] {
+  max-width: 21em;
+  min-width: 21em;
+}
+
+html[compact] > body {
+  padding: 2px;
+}
+
+html[compact] .action-buttons label {
+  padding: 5px 0;
+  margin: 0 0 2px 0;
+  border-radius: 0;
+}
+
+html[compact] .action-buttons label:first-of-type {
+  border-radius: 5px 0 0 2px;
+}
+html[compact] .action-buttons label:last-of-type {
+  border-radius: 0 5px 0 2px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.warning {
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  background-color: light-dark(#facc15, #fef2c3);
+  border-radius: 5px;
+}
+.warning.hidden {
+  display: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.warning span {
+  flex: 1;
+}
+
+.warning .close {
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 0 0 3px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+}
+
+.warning .close:hover {
+  background-color: color-mix(in srgb, currentColor 20%, transparent);
+}
+
+#window-warning {
+  margin-bottom: 5px;
+}
+
+#compose-destination-info {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 4px;
+  padding: 6px 8px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  border: 1px solid color-mix(in srgb, #3b82f6 35%, transparent);
+  background-color: color-mix(in srgb, #3b82f6 12%, transparent);
+}
+
+html[compact] #compose-destination-info {
+  margin-bottom: 2px;
+}
+
+#compose-destination-info .compose-destination-label {
+  font-weight: 600;
+}
+
+#compose-destination-row {
+  cursor: default;
+  display: flex;
+  flex-direction: row;
+  line-height: 1.5em;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 2px 2px 2px 6px;
+  color: var(--item-list-color);
+  background-color: color-mix(in srgb, currentcolor 6%, transparent);
+}
+
+#compose-destination-icon {
+  width: 16px;
+  height: 16px;
+  margin-top: calc((1lh - 16px) / 2);
+  margin-inline-end: 5px;
+  flex: 0 0 auto;
+  background: url("../images/folder/folder.svg") no-repeat 0 0;
+}
+
+#compose-destination-icon.folder-type-inbox {
+  background-image: url("../images/folder/inbox.svg");
+}
+#compose-destination-icon.folder-type-sent {
+  background-image: url("../images/folder/sent.svg");
+}
+#compose-destination-icon.folder-type-outbox {
+  background-image: url("../images/folder/outbox.svg");
+}
+#compose-destination-icon.folder-type-drafts {
+  background-image: url("../images/folder/draft.svg");
+}
+#compose-destination-icon.folder-type-templates {
+  background-image: url("../images/folder/template.svg");
+}
+#compose-destination-icon.folder-type-junk {
+  background-image: url("../images/folder/spam.svg");
+}
+#compose-destination-icon.folder-type-trash {
+  background-image: url("../images/folder/trash.svg");
+}
+#compose-destination-icon.folder-type-virtual {
+  background-image: url("../images/folder/folder-filter.svg");
+}
+#compose-destination-icon.folder-type-archives {
+  background-image: url("../images/folder/archive.svg");
+}
+
+#compose-destination-name {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#compose-destination-path {
+  flex: 0 1 auto;
+  min-width: 0;
+  margin-inline-start: 5px;
+  font-size: 0.874em;
+  color: color-mix(in srgb, currentcolor 75%, transparent);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#folder-list {
+  max-height: 60em;
+}
+
+.action-buttons {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.action-buttons:last-child {
+  clear: both;
+}
+
+.action-buttons label {
+  flex-grow: 1;
+  padding: 6px 10px;
+  border-radius: 3px;
+  border: 1px solid color-mix(in srgb, currentcolor 30%, transparent);
+  text-align: center;
+  margin: 2px 10px 5px 0;
+}
+
+.action-buttons label:last-child {
+  margin-inline-end: 0;
+}
+
+.action-buttons input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+}
+
+.action-buttons input:focus {
+  outline: none;
+}
+
+.action-buttons input:hover + label {
+  background-color: color-mix(in srgb, currentcolor 8%, transparent);
+  box-shadow: none;
+}
+
+.action-buttons input:hover:checked + label {
+  background-color: color-mix(in srgb, currentcolor 20%, transparent);
+  box-shadow: inset 0 1px 3px color-mix(in srgb, currentcolor 30%, transparent);
+}
+
+.action-buttons input:active + label,
+.action-buttons input:checked + label {
+  background-color: color-mix(in srgb, currentcolor 10%, transparent);
+  box-shadow: inset 0 1px 3px color-mix(in srgb, currentcolor 30%, transparent);
+}

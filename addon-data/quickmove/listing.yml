@@ -1,0 +1,36 @@
+name: Quick Folder Move
+summary: Quickly move messages into other folders using the keyboard.
+description: |
+  Quick Folder Move helps Thunderbird users file messages without leaving the keyboard. Search for a destination folder, move or copy the selected messages, jump to folders, and apply tags from the same compact popup.
+
+  It is designed for people with many folders and repeat filing workflows. The extension keeps recent destinations close at hand while still letting you search across the full folder tree.
+
+  - Move, copy, go to folder, or tag selected messages.
+  - Use shortcuts and a toolbar popup for fast filing.
+  - Tune recent folders, excluded folders, and folder matching behavior.
+author: Philipp Kewisch
+author_url: https://github.com/kewisch
+recommended: true
+homepage: https://addons.thunderbird.net/thunderbird/addon/quick-folder-move/
+support_url: https://github.com/kewisch/quickmove/issues
+license: Mozilla Public License 2.0
+privacy_policy: https://github.com/kewisch/quickmove
+categories:
+  - Message and News Reading
+  - Folders and Filters
+tags:
+  - folders
+  - keyboard
+  - productivity
+  - message management
+screenshots:
+  - path: src/onboarding/images/toolbar.png
+    caption: Toolbar integration
+  - path: src/onboarding/images/new-button.png
+    caption: Popup action button
+  - path: src/onboarding/images/folder-strategy.png
+    caption: Folder strategy options
+  - path: src/onboarding/images/exclude-folders.png
+    caption: Excluded folders
+icon: src/images/addon-atn.png
+last_updated: Jun 28, 2026
