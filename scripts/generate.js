@@ -36,6 +36,10 @@ async function main() {
     path.join(rootDir, "src", "styles.css"),
     path.join(buildDir, "assets", "site.css")
   );
+  await fs.copyFile(
+    path.join(rootDir, "src", "logo.svg"),
+    path.join(buildDir, "assets", "logo.svg")
+  );
 
   for (const slug of slugs) {
     await generateAddon(slug);
@@ -126,6 +130,7 @@ async function generateAddon(slug) {
     compatibility: compatibilityText(manifest),
     downloadUrl,
     siteCssUrl: relativeUrl(pageDir, "assets/site.css"),
+    siteLogoUrl: relativeUrl(pageDir, "assets/logo.svg"),
     homeUrl: relativeUrl(pageDir, `${locale}/thunderbird/`),
     extensionsUrl: relativeUrl(pageDir, `${locale}/thunderbird/extensions/`),
     themesUrl: relativeUrl(pageDir, `${locale}/thunderbird/themes/`),

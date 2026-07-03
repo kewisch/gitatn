@@ -63,15 +63,9 @@ a:hover {
   text-decoration: none;
 }
 
-.brand-mark {
-  align-items: center;
-  background: linear-gradient(145deg, #00a7e0, #0060df 58%, #2b114f);
-  border-radius: 50%;
-  display: inline-flex;
-  font-weight: 800;
+.brand-logo {
+  display: block;
   height: 48px;
-  justify-content: center;
-  letter-spacing: 0;
   width: 48px;
 }
 

@@ -57,7 +57,7 @@ const ListingPage = {
       h("header", { class: "site-header" }, [
         h("div", { class: "header-inner" }, [
           h("a", { href: addon.homeUrl, class: "brand" }, [
-            h("span", { class: "brand-mark" }, "TB"),
+            h("img", { src: addon.siteLogoUrl, alt: "", class: "brand-logo" }),
             h("span", { class: "brand-copy" }, [
               h("span", { class: "brand-product" }, "Thunderbird"),
               h("span", { class: "brand-title" }, "ADD-ONS"),
