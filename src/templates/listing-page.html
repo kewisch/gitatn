@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ siteCssUrl }}">
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="header-inner">
+          <a href="{{ homeUrl }}" class="brand">
+            <img src="{{ siteLogoUrl }}" alt="Thunderbird" class="brand-logo">
+            <span class="brand-copy">
+              <span class="brand-title">ADD-ONS</span>
+            </span>
+          </a>
+          <nav class="top-nav" aria-label="Add-on sections">
+            <a href="{{ extensionsUrl }}" class="active">Extensions</a>
+            <a href="{{ themesUrl }}">Themes</a>
+            <a href="{{ moreUrl }}">More</a>
+          </nav>
+          <form class="search" role="search">
+            <label class="visually-hidden" for="search">Find add-ons</label>
+            <input id="search" type="search" placeholder="Find add-ons" autocomplete="off">
+          </form>
+        </div>
+      </header>
+
+      <main class="content">
+        <article class="listing-card">
+          <section class="hero">
+            <div class="identity">
+              {{{ addonIconHtml }}}
+              <div class="title-block">
+                <h1>{{ name }}</h1>
+                <p class="byline">by {{{ authorHtml }}}</p>
+                <p class="summary">{{ summary }}</p>
+                <div class="badges">
+                  {{{ badgesHtml }}}
+                </div>
+              </div>
+            </div>
+            <aside class="install-panel">
+              <a href="{{ downloadUrl }}" class="install-button">Add to Thunderbird</a>
+            </aside>
+          </section>
+
+          {{{ screenshotsSectionHtml }}}
+
+          <section class="section details-grid">
+            <div class="about">
+              <h2>About this extension</h2>
+              <div class="description">
+                {{{ descriptionHtml }}}
+              </div>
+              {{{ homepageLinkHtml }}}
+            </div>
+            <aside class="rating-panel rating-panel-empty" aria-hidden="true"></aside>
+          </section>
+
+          <section class="section permissions">
+            <h2>Permissions and data</h2>
+            <h3>Required permissions:</h3>
+            <ul>
+              {{{ permissionsHtml }}}
+            </ul>
+            <h3>Data collection:</h3>
+            <p>The developer says this extension does not require data collection.</p>
+          </section>
+
+          <section class="section more-info">
+            <h2>More information</h2>
+            <dl class="meta-grid">
+              {{{ metadataItemsHtml }}}
+            </dl>
+          </section>
+        </article>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-primary footer-site-nav">
+          <a href="{{ homeUrl }}" class="footer-brand" aria-label="Thunderbird">
+            <img src="{{ thunderbirdWordmarkUrl }}" alt="" class="footer-brand-wordmark">
+          </a>
+          <nav class="footer-support-links" aria-label="Support links">
+            <a href="https://status.tb.pro/">Status</a>
+            <span aria-hidden="true">|</span>
+            <a href="https://support.tb.pro/">Need help? Visit Support</a>
+            <span aria-hidden="true">|</span>
+            <a href="https://ideas.tb.pro/">Ideas?</a>
+          </nav>
+        </div>
+        <div class="footer-primary footer-legal-block">
+          <a href="https://www.mozilla.org/" class="footer-mozilla" aria-label="Mozilla">
+            <img src="{{ mozillaLogoUrl }}" alt="" class="footer-mozilla-logo">
+          </a>
+          <div class="footer-legal-content">
+            <nav class="footer-legal-links" aria-label="Legal links">
+              <a href="https://tb.pro/en-US/privacy">Privacy Policy</a>
+              <a href="https://tb.pro/en-US/terms">Legal</a>
+              <a href="https://www.mozilla.org/en-US/about/legal/report-infringement/">Send DMCA Notice</a>
+              <a href="https://www.mozilla.org/about/legal/fraud-report/">Report Fraud</a>
+              <a href="https://www.mozilla.org/about/governance/policies/participation/">Participation Guidelines</a>
+            </nav>
+            <p>Thunderbird is part of <a href="https://blog.thunderbird.net/2020/01/thunderbirds-new-home/">MZLA Technologies Corporation</a>, a wholly owned subsidiary of the not-for-profit Mozilla.org.</p>
+            <p>Portions of this content are ©1998-2026 by individual contributors. Content available under a <a href="https://www.mozilla.org/foundation/licensing/website-content/">Creative Commons license</a>.</p>
+            <p><a href="https://github.com/thunderbird/thunderbird-website">Contribute to this site</a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
