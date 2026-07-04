@@ -57,9 +57,8 @@ const ListingPage = {
       h("header", { class: "site-header" }, [
         h("div", { class: "header-inner" }, [
           h("a", { href: addon.homeUrl, class: "brand" }, [
-            h("img", { src: addon.siteLogoUrl, alt: "", class: "brand-logo" }),
+            h("img", { src: addon.siteLogoUrl, alt: "Thunderbird", class: "brand-logo" }),
             h("span", { class: "brand-copy" }, [
-              h("span", { class: "brand-product" }, "Thunderbird"),
               h("span", { class: "brand-title" }, "ADD-ONS"),
             ]),
           ]),
@@ -177,14 +176,43 @@ const ListingPage = {
       ]),
 
       h("footer", { class: "site-footer" }, [
-        h("div", { class: "footer-inner" }, [
-          h("strong", { class: "moz" }, "moz://a"),
-          h("nav", { "aria-label": "Footer links" }, [
-            h("a", { href: "#" }, "Add-ons"),
-            h("a", { href: "#" }, "Download Thunderbird"),
-            h("a", { href: "#" }, "Community"),
-            h("a", { href: "#" }, "Developer Hub"),
-            h("a", { href: "#" }, "Privacy"),
+        h("div", { class: "footer-primary footer-site-nav" }, [
+          h("a", { href: addon.homeUrl, class: "footer-brand", "aria-label": "Thunderbird" }, [
+            h("img", { src: addon.thunderbirdWordmarkUrl, alt: "", class: "footer-brand-wordmark" }),
+          ]),
+          h("nav", { class: "footer-support-links", "aria-label": "Support links" }, [
+            h("a", { href: "https://status.tb.pro/" }, "Status"),
+            h("span", { "aria-hidden": "true" }, "|"),
+            h("a", { href: "https://support.tb.pro/" }, "Need help? Visit Support"),
+            h("span", { "aria-hidden": "true" }, "|"),
+            h("a", { href: "https://ideas.tb.pro/" }, "Ideas?"),
+          ]),
+        ]),
+        h("div", { class: "footer-primary footer-legal-block" }, [
+          h("a", { href: "https://www.mozilla.org/", class: "footer-mozilla", "aria-label": "Mozilla" }, [
+            h("img", { src: addon.mozillaLogoUrl, alt: "", class: "footer-mozilla-logo" }),
+          ]),
+          h("div", { class: "footer-legal-content" }, [
+            h("nav", { class: "footer-legal-links", "aria-label": "Legal links" }, [
+              h("a", { href: "https://tb.pro/en-US/privacy" }, "Privacy Policy"),
+              h("a", { href: "https://tb.pro/en-US/terms" }, "Legal"),
+              h("a", { href: "https://www.mozilla.org/en-US/about/legal/report-infringement/" }, "Send DMCA Notice"),
+              h("a", { href: "https://www.mozilla.org/about/legal/fraud-report/" }, "Report Fraud"),
+              h("a", { href: "https://www.mozilla.org/about/governance/policies/participation/" }, "Participation Guidelines"),
+            ]),
+            h("p", [
+              "Thunderbird is part of ",
+              h("a", { href: "https://blog.thunderbird.net/2020/01/thunderbirds-new-home/" }, "MZLA Technologies Corporation"),
+              ", a wholly owned subsidiary of the not-for-profit Mozilla.org.",
+            ]),
+            h("p", [
+              "Portions of this content are ©1998-2026 by individual contributors. Content available under a ",
+              h("a", { href: "https://www.mozilla.org/foundation/licensing/website-content/" }, "Creative Commons license"),
+              ".",
+            ]),
+            h("p", [
+              h("a", { href: "https://github.com/thunderbird/thunderbird-website" }, "Contribute to this site"),
+            ]),
           ]),
         ]),
       ]),

@@ -40,6 +40,14 @@ async function main() {
     path.join(rootDir, "src", "logo.svg"),
     path.join(buildDir, "assets", "logo.svg")
   );
+  await fs.copyFile(
+    path.join(rootDir, "src", "thunderbird-wordmark.svg"),
+    path.join(buildDir, "assets", "thunderbird-wordmark.svg")
+  );
+  await fs.copyFile(
+    path.join(rootDir, "src", "mozilla.svg"),
+    path.join(buildDir, "assets", "mozilla.svg")
+  );
 
   for (const slug of slugs) {
     await generateAddon(slug);
@@ -131,6 +139,8 @@ async function generateAddon(slug) {
     downloadUrl,
     siteCssUrl: relativeUrl(pageDir, "assets/site.css"),
     siteLogoUrl: relativeUrl(pageDir, "assets/logo.svg"),
+    thunderbirdWordmarkUrl: relativeUrl(pageDir, "assets/thunderbird-wordmark.svg"),
+    mozillaLogoUrl: relativeUrl(pageDir, "assets/mozilla.svg"),
     homeUrl: relativeUrl(pageDir, `${locale}/thunderbird/`),
     extensionsUrl: relativeUrl(pageDir, `${locale}/thunderbird/extensions/`),
     themesUrl: relativeUrl(pageDir, `${locale}/thunderbird/themes/`),
