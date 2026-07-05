@@ -1,0 +1,317 @@
+{
+  "extensionName": {
+    "message": "Постачальник для Календаря Google",
+    "description": "Please keep in mind that these strings had to be approved by the Google Brand Features Team. Be sure to make clear that this extension is *FOR* Google Calendar and not *BY* Google. Also, it was explicitly stated, that the phrase 'Google Calendar' should be localized just as it is on the localized versions of the Google Calendar UI."
+  },
+  "extensionDescription": {
+    "message": "Дозволяє двонаправлений доступ до Календаря Google",
+    "description": "Please keep in mind that these strings had to be approved by the Google Brand Features Team. Be sure to make clear that this extension is *FOR* Google Calendar and not *BY* Google. Also, it was explicitly stated, that the phrase 'Google Calendar' should be localized just as it is on the localized versions of the Google Calendar UI."
+  },
+  "gdata-provider.label": {
+    "message": "Календар Google",
+    "description": "Please keep in mind that these strings had to be approved by the Google Brand Features Team. Be sure to make clear that this extension is *FOR* Google Calendar and not *BY* Google. Also, it was explicitly stated, that the phrase 'Google Calendar' should be localized just as it is on the localized versions of the Google Calendar UI."
+  },
+  "gdata.privacy.default.label": {
+    "message": "Типовий для Google"
+  },
+  "gdata.privacy.default.accesskey": {
+    "message": "Т"
+  },
+  "gdata.migration.title": {
+    "message": "Перемістити календарі, призначені лише для читання"
+  },
+  "gdata.migration.description": {
+    "message": "Постачальник для Календаря Google визначив, що у вас є календарі, які можуть мати доступ до Календаря Google лише у режимі читання. Оберіть календар для оновлення за потреби."
+  },
+  "gdata.migration.upgrade.label": {
+    "message": "Оновити"
+  },
+  "gdata.migration.upgrade.accesskey": {
+    "message": "О"
+  },
+  "gdata.migration.showagain.label": {
+    "message": "Завжди перевіряти"
+  },
+  "gdata.reminder.default": {
+    "message": "Типове нагадування"
+  },
+  "gdata.wizard.session.description": {
+    "message": "Оберіть наявний сеанс або введіть свою адресу електронної пошти для створення нового сеансу. Вам потрібен лише один сеанс на обліковий запис."
+  },
+  "gdata.wizard.calendars.description": {
+    "message": "Оберіть календарі та списки завдань, на які ви бажаєте підписатися."
+  },
+  "gdata.wizard.nextstep.description": {
+    "message": "Перейдіть до наступного кроку, щоб налаштувати свої календарі."
+  },
+  "busyTitle": {
+    "message": "Зайнятий ($calendar_name$)",
+    "description": "Events with only free/busy access don't have a title, they will use this title instead. The calendar name is used as a parameter, since its often named after the person whose calendar you are viewing.",
+    "placeholders": {
+      "calendar_name": {
+        "content": "$1",
+        "example": "The name of the calendar, e.g. 'Home'"
+      }
+    }
+  },
+  "quotaExceeded": {
+    "message": "Обмеження для $session_id$ було перевищене, спробуйте, будь ласка, пізніше.",
+    "description": "This is shown when the request quota has been exceeded.",
+    "placeholders": {
+      "session_id": {
+        "content": "$1",
+        "example": "The session id (what the user enters as an email in the new calendar dialog)"
+      }
+    }
+  },
+  "providerOutdated": {
+    "message": "Термін дії версії цього провайдера було завершено, оновіть, будь ласка, до останньої версії."
+  },
+  "reminderOutOfRange": {
+    "message": "Календар Google дозволяє встановлювати нагадування лише за 4 тижні до початку події."
+  },
+  "syncProgressEvent": {
+    "message": "Синхронізація $calendar_name$ події $num_events_synced$ з $total_events_to_sync$",
+    "placeholders": {
+      "calendar_name": {
+        "content": "$1",
+        "example": "The name of the calendar, e.g. 'Home'"
+      },
+      "num_events_synced": {
+        "content": "$2",
+        "example": "The number of events already synced"
+      },
+      "total_events_to_sync": {
+        "content": "$3",
+        "example": "The total number of events"
+      }
+    }
+  },
+  "syncProgressTask": {
+    "message": "Синхронізація $calendar_name$ завдання $num_tasks_synced$ з $total_tasks_to_sync$",
+    "placeholders": {
+      "calendar_name": {
+        "content": "$1",
+        "example": "The name of the calendar, e.g. 'Home'"
+      },
+      "num_tasks_synced": {
+        "content": "$2",
+        "example": "The number of tasks already synced"
+      },
+      "total_tasks_to_sync": {
+        "content": "$3",
+        "example": "The total number of tasks"
+      }
+    }
+  },
+  "syncStatus": {
+    "message": "Синхронізація календаря $calendar_name$",
+    "placeholders": {
+      "calendar_name": {
+        "content": "$1",
+        "example": "The name of the calendar, e.g. 'Home'"
+      }
+    }
+  },
+  "requestWindowDescription": {
+    "message": "Постачальник для Календаря Google бажає отримати доступ до вашого облікового запису $session_id$ , щоб отримувати події та завдання. Особисті дані й дані календаря передаються лише між вашим комп'ютером і Google, жодні сайти третіх сторін не долучаються.",
+    "placeholders": {
+      "session_id": {
+        "content": "$1",
+        "example": "The session id (what the user enters as an email in the new calendar dialog)"
+      }
+    }
+  },
+  "requestWindowTitle": {
+    "message": "Увійдіть в свій обліковий запис $session_id$",
+    "placeholders": {
+      "session_id": {
+        "content": "$1",
+        "example": "The session id (what the user enters as an email in the new calendar dialog)"
+      }
+    }
+  },
+  "onboarding.welcome.p3.prelink": {
+    "message": " Перш ніж пропустити цю сторінку, перевірте"
+  },
+  "onboarding.getstarted.title": {
+    "message": "Початок роботи"
+  },
+  "onboarding.getstarted.imgalt": {
+    "message": "Бічна панель у режимі перегляду календаря Thunderbird із кнопкою нового календаря внизу"
+  },
+  "onboarding.providertype.title": {
+    "message": "У мережі?"
+  },
+  "calendarsHeader": {
+    "message": "Календарі"
+  },
+  "settings.enableEmailInvitations": {
+    "message": "Увімкнути планування електронною поштою"
+  },
+  "settings.sendEventNotifications": {
+    "message": "Надіслати гостям електронного листа про подію"
+  },
+  "settings.enableAttendees": {
+    "message": "Синхронізувати учасників події"
+  },
+  "eventdialog.codeType.password": {
+    "message": "Пароль"
+  },
+  "eventdialog.codeType.pin": {
+    "message": "PIN (персональний ідентифікаційний номер)"
+  },
+  "eventdialog.oooEvent": {
+    "message": "Не на роботі"
+  },
+  "eventdialog.focusEvent": {
+    "message": "Зайнятий/та"
+  },
+  "eventdialog.joinVia.sip": {
+    "message": "SIP (протокол встановлення сесії)"
+  },
+  "errors.rate_limit_exceeded": {
+    "message": "Зараз багато користувачів входять в систему, Google вказав, що квоту входу за кількістю перевищено. Спробуйте, будь ласка, пізніше."
+  },
+  "settings.forcePlainText": {
+    "message": "Примусово використовувати звичайний текст в описах подій"
+  },
+  "eventdialog.joinVia.more": {
+    "message": "Більше інформації про конференцію"
+  },
+  "eventdialog.joinVia.video": {
+    "message": "Приєднатись через відеоконференцію"
+  },
+  "eventdialog.codeType.accessCode": {
+    "message": "Код доступу"
+  },
+  "onboarding.getstarted.p1": {
+    "message": "Не знаєте, з чого почати? Спочатку потрібно підписатися на свої календарі. Перейдіть на вкладку календаря в Thunderbird і натисніть «Новий календар» у нижній частині бічної панелі."
+  },
+  "taskListsHeader": {
+    "message": "Cписок завдань"
+  },
+  "eventdialog.joinVia.phone": {
+    "message": "Телефон"
+  },
+  "onboarding.welcome.p1": {
+    "message": "Постачальник для Календаря Google розпочав мою подорож до відкритого коду. У 2006 році не було простого способу зв’язати Thunderbird із Календарем Google. Керований цікавістю та бажанням допомогти, я досліджував API Google і знайшов спосіб подолати цю прогалину, надаючи незліченній кількості користувачів Thunderbird доступ до Календаря Google. Цей досвід не лише дав мені відчуття мети, але й відкрив двері до професійної кар’єри, де відкритий код став невід’ємною частиною мого повсякденного життя."
+  },
+  "eventdialog.codeType.passcode": {
+    "message": "Код-пароль"
+  },
+  "settings.warning": {
+    "message": "Ці налаштування дозволять вам використовувати планування розкладу електронною поштою через Календар Google, разом з цим були повідомлення про надсилання сторонніх сповіщень електронною поштою. Будь ласка, спочатку протестуйте на невеликій зустрічі."
+  },
+  "onboarding.welcome.p2": {
+    "message": "Тепер ви є частиною цієї подорожі зі мною. Ваша підтримка дуже важлива для мене, і я не можу уявити своє майбутнє без цього розширення."
+  },
+  "onboarding.welcome.p3.postlink": {
+    "message": "зробити правильний вибір щодо того, як учасники відображатимуться на подіях та як оброблятимуться запрошення."
+  },
+  "eventdialog.conferenceLabel": {
+    "message": "Конференція:"
+  },
+  "eventdialog.codeType.meetingCode": {
+    "message": "Код зустрічі"
+  },
+  "onboarding.welcome.p3.linktext": {
+    "message": "розділ параментрів планування"
+  },
+  "onboarding.providertype.imgalt": {
+    "message": "Діалогове вікно нового календаря з можливістю вибору календаря Google"
+  },
+  "onboarding.providertype.p1": {
+    "message": "Ви побачите три варіанти: На моєму комп’ютері, У мережі та Постачальник для Календаря Google. Хоча Google Календар технічно підключений до мережі, оберіть опцію для конкретного постачальника."
+  },
+  "onboarding.providertype.p2": {
+    "message": "На наступному екрані введіть вашу адресу електронної пошти. Навіть якщо ви підписуєтеся на чужий календар, використовуйте лише свою електронну адресу. Якщо ви вже підписалися на їхній календар на веб-сайті Календаря Google, він з’явиться у вашому обліковому записі."
+  },
+  "onboarding.selectcalendars.p2": {
+    "message": "На наступному екрані оберіть календарі та списки завдань, на які бажаєте підписатися. Раніше підписані календарі відображатимуться як уже додані. Щоб відписатися, скористайтеся контекстним меню у списку календарів Thunderbird, а не діалоговим вікном додавання нового календаря."
+  },
+  "onboarding.allset.p1": {
+    "message": "Готово. Початкова синхронізація може зайняти певний час, особливо якщо у вас багато подій. Під час цього процесу Thunderbird може виглядати завислим через особливості обробки подій. Залиште його працювати до півгодини, перш ніж припускати, що виникла проблема. Однак у більшості випадків синхронізація завершується протягом хвилини."
+  },
+  "onboarding.weblate.p2.postlink": {
+    "message": " сьогодні! Чи можете ви отримати свою мову на 100%?"
+  },
+  "onboarding.weblate.title": {
+    "message": "Цей вміст вашою мовою?"
+  },
+  "onboarding.weblate.imgalt": {
+    "message": "Скріншот Weblate із перекладом рядка з англійської на німецьку"
+  },
+  "onboarding.selectcalendars.imgalt": {
+    "message": "Список календарів із прапорцями збоку"
+  },
+  "onboarding.selectcalendars.p1": {
+    "message": "Далі вам буде запропоновано ввійти. У діалоговому вікні входу буде вказано адресу електронної пошти, тому переконайтеся, що ви входите в правильний обліковий запис. Якщо вас попросять увійти пізніше, переконайтеся, що ви використовуєте вказаний вами обліковий запис."
+  },
+  "onboarding.scheduling.enableEmailInvitations": {
+    "message": "Ця опція дозволяє приймати запрошення за допомогою панелі над повідомленням із запрошенням. Хоча це зручно, зазвичай краще залишити її вимкненою і натомість використовувати параметр «Автоматично додавати події до календаря» у веб-налаштуваннях Google Календаря."
+  },
+  "onboarding.scheduling.enableAttendees": {
+    "message": "Якщо у вас є події з учасниками, цю опцію варто ввімкнути. Без неї будь-які зміни у події призведуть до видалення всіх учасників. Якщо ви зміните цей параметр, не забудьте повторно підписатися на свої календарі."
+  },
+  "onboarding.scheduling.p2": {
+    "message": "Якщо увімкнено планування через електронну пошту й щось піде не так, Thunderbird може створити нову подію замість того, щоб правильно прийняти існуючу. Для великих зустрічей, наприклад загальнокорпоративного заходу, це може виглядати так, ніби ви запрошуєте всіх на дубльовану подію."
+  },
+  "onboarding.weblate.p1": {
+    "message": "Постачальник для Календаря Google використовує Weblate для перекладу, де ви можете легко перекладати рядки на свою мову. Ви володієте не англійською мовою і хочете допомогти?"
+  },
+  "onboarding.allset.p2": {
+    "message": "Що далі? Час запланувати події. Одна з переваг використання розширення Provider for Google Calendar замість вбудованого з’єднання CalDAV — це додаткові можливості налаштування у вікні створення події. Ви можете встановлювати стандартні нагадування та змінювати типові налаштування конфіденційності. Крім того, можна керувати завданнями Google безпосередньо в Thunderbird."
+  },
+  "onboarding.weblate.p2.prelink": {
+    "message": " "
+  },
+  "onboarding.scheduling.p1": {
+    "message": "Планування між Thunderbird і Google може бути непростим. Thunderbird не завжди чітко вказує, чи є подія прийнятим запрошенням або новою подією. Ось кілька налаштувань, які варто врахувати:"
+  },
+  "onboarding.scheduling.p3.linktext": {
+    "message": "налаштування розширення"
+  },
+  "onboarding.scheduling.sendEventNotifications": {
+    "message": "Коли ввімкнено, Google надсилає сповіщення, коли ви змінюєте подію. Якщо вимкнено, це працює як натискання «Не надсилати» кожного разу, коли ви оновлюєте заплановану подію."
+  },
+  "onboarding.scheduling.p3.prelink": {
+    "message": "Якщо ви захочете змінити ці налаштування пізніше, перейдіть до"
+  },
+  "onboarding.footer.p1.postlink": {
+    "message": ". Тут ви також можете допомогти покращити майбутні версії розширення."
+  },
+  "onboarding.selectcalendars.title": {
+    "message": "Оберіть свої календарі"
+  },
+  "onboarding.allset.title": {
+    "message": "У вас все готово!"
+  },
+  "onboarding.allset.imgalt": {
+    "message": "Нове діалогове вікно завдання, у якому відображаються лише відповідні поля"
+  },
+  "onboarding.scheduling.title": {
+    "message": "Проблеми з плануванням"
+  },
+  "onboarding.scheduling.p3.postlink": {
+    "message": "для цього розширення."
+  },
+  "onboarding.weblate.p2.linktext": {
+    "message": "Допоможіть з перекладами"
+  },
+  "onboarding.footer.p1.linktext": {
+    "message": "Сторінка GitHub"
+  },
+  "onboarding.footer.donate.text": {
+    "message": "Надішліть мені токени вдячності"
+  },
+  "onboarding.footer.p1.prelink": {
+    "message": "Якщо у вас виникли запитання, будь ласка, зверніться через розширення"
+  },
+  "onboarding.donate.amount": {
+    "message": "15eur"
+  },
+  "onboarding.footer.p2": {
+    "message": "Дякую, що дочитали до кінця! Якщо ви зайшли так далеко, сподіваюся, ви в захваті від цього доповнення, як і я. Вперед та якщо ви вже спробували, я буду вдячний за вашу підтримку."
+  }
+}
