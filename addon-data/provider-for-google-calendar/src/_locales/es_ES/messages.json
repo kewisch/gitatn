@@ -1,0 +1,317 @@
+{
+  "extensionName": {
+    "message": "Proveedor para Google Calendar",
+    "description": "Please keep in mind that these strings had to be approved by the Google Brand Features Team. Be sure to make clear that this extension is *FOR* Google Calendar and not *BY* Google. Also, it was explicitly stated, that the phrase 'Google Calendar' should be localized just as it is on the localized versions of the Google Calendar UI."
+  },
+  "extensionDescription": {
+    "message": "Permite el acceso bidireccional a Google Calendar",
+    "description": "Please keep in mind that these strings had to be approved by the Google Brand Features Team. Be sure to make clear that this extension is *FOR* Google Calendar and not *BY* Google. Also, it was explicitly stated, that the phrase 'Google Calendar' should be localized just as it is on the localized versions of the Google Calendar UI."
+  },
+  "gdata-provider.label": {
+    "message": "Google Calendar",
+    "description": "Please keep in mind that these strings had to be approved by the Google Brand Features Team. Be sure to make clear that this extension is *FOR* Google Calendar and not *BY* Google. Also, it was explicitly stated, that the phrase 'Google Calendar' should be localized just as it is on the localized versions of the Google Calendar UI."
+  },
+  "gdata.privacy.default.label": {
+    "message": "Predeterminado por Google"
+  },
+  "gdata.privacy.default.accesskey": {
+    "message": "D"
+  },
+  "gdata.migration.title": {
+    "message": "Migrar calendarios de solo lectura"
+  },
+  "gdata.migration.description": {
+    "message": "El proveedor para Google Calendar ha detectado que tienes calendarios ya existentes que solo pueden acceder a Google Calendar en modo de sólo lectura. A continuación se pueden seleccionar y pasarlos al modo de funcionalidad completa."
+  },
+  "gdata.migration.upgrade.label": {
+    "message": "Migrar"
+  },
+  "gdata.migration.upgrade.accesskey": {
+    "message": "U"
+  },
+  "gdata.migration.showagain.label": {
+    "message": "Comprobar siempre"
+  },
+  "gdata.reminder.default": {
+    "message": "Recordatorio por omisión"
+  },
+  "gdata.wizard.session.description": {
+    "message": "Elige una sesión ya existente o escribe tu dirección de correo electrónico para crear una nueva. Solo se necesita una sesión por cuenta."
+  },
+  "gdata.wizard.calendars.description": {
+    "message": "Elige los calendarios y listas de tareas a los que te gustaría suscribirte."
+  },
+  "gdata.wizard.nextstep.description": {
+    "message": "Avanza al siguiente paso para configurar tus calendarios."
+  },
+  "busyTitle": {
+    "message": "Ocupado ($calendar_name$)",
+    "description": "Events with only free/busy access don't have a title, they will use this title instead. The calendar name is used as a parameter, since its often named after the person whose calendar you are viewing.",
+    "placeholders": {
+      "calendar_name": {
+        "content": "$1",
+        "example": "The name of the calendar, e.g. 'Home'"
+      }
+    }
+  },
+  "quotaExceeded": {
+    "message": "Se ha excedido el tope de peticiones para $session_id$, vuelve a intentarlo más tarde.",
+    "description": "This is shown when the request quota has been exceeded.",
+    "placeholders": {
+      "session_id": {
+        "content": "$1",
+        "example": "The session id (what the user enters as an email in the new calendar dialog)"
+      }
+    }
+  },
+  "providerOutdated": {
+    "message": "Esta versión del proveedor ha caducado, actualízala a la última versión."
+  },
+  "reminderOutOfRange": {
+    "message": "Google Calendar sólo permite recordatorios hasta 4 semanas antes de que comience el evento."
+  },
+  "syncProgressEvent": {
+    "message": "Sincronizando el evento $num_events_synced$ de $total_events_to_sync$ en $calendar_name$",
+    "placeholders": {
+      "calendar_name": {
+        "content": "$1",
+        "example": "The name of the calendar, e.g. 'Home'"
+      },
+      "num_events_synced": {
+        "content": "$2",
+        "example": "The number of events already synced"
+      },
+      "total_events_to_sync": {
+        "content": "$3",
+        "example": "The total number of events"
+      }
+    }
+  },
+  "syncProgressTask": {
+    "message": "Sincronizando la tarea $num_tasks_synced$ de $total_tasks_to_sync$ en $calendar_name$",
+    "placeholders": {
+      "calendar_name": {
+        "content": "$1",
+        "example": "The name of the calendar, e.g. 'Home'"
+      },
+      "num_tasks_synced": {
+        "content": "$2",
+        "example": "The number of tasks already synced"
+      },
+      "total_tasks_to_sync": {
+        "content": "$3",
+        "example": "The total number of tasks"
+      }
+    }
+  },
+  "syncStatus": {
+    "message": "Sincronizando el calendario $calendar_name$",
+    "placeholders": {
+      "calendar_name": {
+        "content": "$1",
+        "example": "The name of the calendar, e.g. 'Home'"
+      }
+    }
+  },
+  "requestWindowDescription": {
+    "message": "El proveedor para Google Calendar necesita acceder a tu cuenta $session_id$ para descargar eventos y tareas. Las credenciales y datos del calendario se trasfieren directamente entre tu dispositivo y Google, sin ningún intermediario.",
+    "placeholders": {
+      "session_id": {
+        "content": "$1",
+        "example": "The session id (what the user enters as an email in the new calendar dialog)"
+      }
+    }
+  },
+  "requestWindowTitle": {
+    "message": "Iniciar sesión en la cuenta $session_id$",
+    "placeholders": {
+      "session_id": {
+        "content": "$1",
+        "example": "The session id (what the user enters as an email in the new calendar dialog)"
+      }
+    }
+  },
+  "onboarding.getstarted.title": {
+    "message": "Primeros pasos"
+  },
+  "eventdialog.codeType.accessCode": {
+    "message": "Código de acceso"
+  },
+  "eventdialog.codeType.pin": {
+    "message": "PIN"
+  },
+  "settings.sendEventNotifications": {
+    "message": "Enviar notificaciones por correo electrónico a los invitados"
+  },
+  "calendarsHeader": {
+    "message": "Calendarios"
+  },
+  "errors.rate_limit_exceeded": {
+    "message": "Hay muchos usuarios iniciando sesión en este momento, Google ha indicado que se ha superado el límite de inicios de sesión simultáneos. Inténtalo de nuevo más tarde."
+  },
+  "settings.warning": {
+    "message": "Estos ajustes te permitirán usar la programación de correo electrónico a través de Google Calendar, pero algunos usuarios han informado de problemas con correos electrónicos de notificación que se envían de forma errónea. Recomendamos probarlo primero con una pequeña reunión."
+  },
+  "settings.forcePlainText": {
+    "message": "Forzar el uso de texto plano en las descripciones de eventos"
+  },
+  "eventdialog.joinVia.video": {
+    "message": "Unirse por videoconferencia"
+  },
+  "eventdialog.codeType.passcode": {
+    "message": "Código"
+  },
+  "eventdialog.codeType.password": {
+    "message": "Contraseña"
+  },
+  "onboarding.welcome.p3.prelink": {
+    "message": " Antes de dejar de leer esta página consulta la"
+  },
+  "onboarding.providertype.p2": {
+    "message": "En la siguiente pantalla escribe tu dirección de correo electrónico. Utiliza tu propia dirección de correo electrónico aunque la suscripción sea al calendario de otra persona. Si ya te has suscrito a su calendario en el sitio web de Google Calendar aparecerá en tu cuenta."
+  },
+  "onboarding.welcome.p2": {
+    "message": "Los usuarios del complemento forman parte de este viaje, por lo que tu apoyo es fundamental de cara al futuro."
+  },
+  "onboarding.welcome.p1": {
+    "message": "El proveedor para Google Calendar fue mi primer proyecto de código abierto. En 2006 no había ninguna forma sencilla de conectar Thunderbird con Google Calendar. Tenía curiosidad y ganas de mejorar las cosas, por lo que aprendí cómo funcionaban las APIs de Google y encontré una forma de abordarlo, permitiendo a innumerables usuarios de Thunderbird acceder a Google Calendar. Esta experiencia no solo me llena, sino que también me abre las puertas a una carrera profesional en la que el código abierto se ha convertido en una parte integral de mi vida diaria."
+  },
+  "onboarding.providertype.p1": {
+    "message": "Verás tres opciones: «En mi equipo», «En la red» y «Google Calendar». Aunque Google Calendar esté técnicamente en la red, selecciona la tercera opción para utilizar este proveedor."
+  },
+  "onboarding.selectcalendars.title": {
+    "message": "Elige entre tus calendarios"
+  },
+  "onboarding.selectcalendars.imgalt": {
+    "message": "Una lista de calendarios con casillas de verificación"
+  },
+  "onboarding.welcome.p3.linktext": {
+    "message": "sección sobre preferencias de programación"
+  },
+  "onboarding.getstarted.imgalt": {
+    "message": "La barra lateral en vista de calendario de Thunderbird con el nuevo botón de calendario en la parte inferior"
+  },
+  "onboarding.providertype.title": {
+    "message": "¿En la red?"
+  },
+  "onboarding.providertype.imgalt": {
+    "message": "Diálogo de nuevo calendario, mostrando la opción de elegir Google Calendar"
+  },
+  "eventdialog.codeType.meetingCode": {
+    "message": "Código de la reunión"
+  },
+  "eventdialog.joinVia.phone": {
+    "message": "Teléfono"
+  },
+  "settings.enableAttendees": {
+    "message": "Sincronizar asistentes al evento"
+  },
+  "eventdialog.joinVia.sip": {
+    "message": "SIP"
+  },
+  "taskListsHeader": {
+    "message": "Listas de tareas"
+  },
+  "settings.enableEmailInvitations": {
+    "message": "Activar correos programados"
+  },
+  "eventdialog.conferenceLabel": {
+    "message": "Conferencia:"
+  },
+  "eventdialog.oooEvent": {
+    "message": "Fuera de la oficina"
+  },
+  "onboarding.welcome.p3.postlink": {
+    "message": "para elegir de qué forma aparecen los asistentes de eventos y cómo llevar a cabo invitaciones."
+  },
+  "onboarding.getstarted.p1": {
+    "message": "¿No sabes cómo empezar? Primero hay que crear una suscripción a un calendario. Dirígete a la pestaña de calendarios en Thunderbird y haz clic en «Nuevo calendario» en la parte baja de la barra lateral."
+  },
+  "onboarding.selectcalendars.p2": {
+    "message": "En la siguiente pantalla se eligen los calendarios y listas de tareas a los que suscribirse. Los calendarios a los que uno se haya suscrito con anterioridad ya aparecerán como tal. Para cancelar una suscripción hay que utilizar el menú contextual en la lista de calendarios de Thunderbird, en vez del diálogo para nuevos calendarios."
+  },
+  "eventdialog.joinVia.more": {
+    "message": "Más información sobre la conferencia"
+  },
+  "onboarding.selectcalendars.p1": {
+    "message": "En este siguiente paso se pedirá que inicies sesión. La interfaz tiene un campo en el que escribir tu correo electrónico, asegúrate de iniciar sesión en la cuenta correcta. Si en un futuro se vuelve a pedir iniciar sesión asegúrate de utilizar esta misma cuenta."
+  },
+  "onboarding.allset.title": {
+    "message": "¡Ya está todo listo!"
+  },
+  "onboarding.scheduling.title": {
+    "message": "Problemas de programación"
+  },
+  "onboarding.allset.p1": {
+    "message": "Listo, la primera sincronización puede tardar un poco, sobre todo si hay muchos eventos, por lo que puede que Thunderbird se bloquee y no responda durante el proceso. Lo mejor es dejarlo trabajar al menos durante media hora antes de intentar cerrarlo. En la mayoría de los casos la sincronización concluye en un minuto."
+  },
+  "onboarding.allset.imgalt": {
+    "message": "El nuevo cuadro de diálogo de tareas, mostrando sólo los campos relevantes al cuadro de diálogo"
+  },
+  "onboarding.allset.p2": {
+    "message": "¿Y ahora qué? Es hora de programar algunos eventos. Una ventaja de usar el proveedor de Google Calendar en vez de la conexión CalDAV integrada es la personalización extra en el cuadro de diálogo de eventos. Uno puede definir alarmas predeterminadas y ajustar sus ajustes de privacidad. Además se pueden gestionar las tareas de Google directamente desde Thunderbird."
+  },
+  "eventdialog.focusEvent": {
+    "message": "Tiempo de concentración"
+  },
+  "onboarding.scheduling.p1": {
+    "message": "La programación de eventos entre Thunderbird y Google puede ser complicada. Thunderbird no siempre proporciona información clara sobre si un evento es una invitación aceptada o un nuevo evento. He aquí unos cuantos ajustes a considerar:"
+  },
+  "onboarding.scheduling.sendEventNotifications": {
+    "message": "Al activarlo Google envía notificaciones tras modificar un evento. Si se desactiva funciona como si se pulsara «No enviar» cada vez que se modifica un evento programado."
+  },
+  "onboarding.scheduling.p3.linktext": {
+    "message": "opciones del complemento"
+  },
+  "onboarding.scheduling.p3.postlink": {
+    "message": "de la extensión actual."
+  },
+  "onboarding.weblate.imgalt": {
+    "message": "Captura de pantalla de Weblate traduciendo un texto del inglés al alemán"
+  },
+  "onboarding.scheduling.enableAttendees": {
+    "message": "Querrás tenerlo activado si tienes eventos con invitados. Si no lo está cualquier cambio que hagas a un evento borrará a todos los invitados. Si cambias esta opción asegúrate de resuscribirte a todos tu calendarios."
+  },
+  "onboarding.weblate.title": {
+    "message": "¿Este contenido está en tu idioma?"
+  },
+  "onboarding.weblate.p2.linktext": {
+    "message": "colaborar con la traducción"
+  },
+  "onboarding.weblate.p1": {
+    "message": "El proveedor para Google Calendar se traduce a través de Weblate, donde se puede colaborar de forma sencilla para mejorar la traducción. ¿Hablas otro idioma además del inglés y quieres ayudar?"
+  },
+  "onboarding.weblate.p2.postlink": {
+    "message": " para que llegue al 100%."
+  },
+  "onboarding.footer.p1.linktext": {
+    "message": "página de GitHub"
+  },
+  "onboarding.footer.donate.text": {
+    "message": "Enviar una pequeña donación"
+  },
+  "onboarding.footer.p1.postlink": {
+    "message": ". Aquí es donde se desarrollan las versiones futuras del complemento."
+  },
+  "onboarding.footer.p1.prelink": {
+    "message": "Si tienes alguna duda o pregunta lo mejor es contactar a través de nuestra"
+  },
+  "onboarding.footer.p2": {
+    "message": "Gracias por leerme hasta el final, espero que te guste tanto como a mí. Pruébalo primero, pero si ya lo has usado antes o quieres apoyar el proyecto te pedimos que hagas una donación."
+  },
+  "onboarding.scheduling.enableEmailInvitations": {
+    "message": "Esto te permite aceptar invitaciones desde la interfaz en forma de barra que aparece encima del correo de invitación. Aunque sea práctico lo mejor es desactivar esta opción y usar la opción «Añadir eventos automáticamente a tu calendario» en la configuración web de Google Calendar."
+  },
+  "onboarding.scheduling.p2": {
+    "message": "Thunderbird podría crear un evento en vez de aceptar uno ya existente si la programación de correos está activa pero no funciona. Para grandes reuniones, como un evento que involucre a toda una compañía, podría parecer que se esté invitando a todo el mundo a un evento duplicado."
+  },
+  "onboarding.donate.amount": {
+    "message": "15eur"
+  },
+  "onboarding.scheduling.p3.prelink": {
+    "message": "Los ajustes se pueden cambiar más tarde desde las"
+  },
+  "onboarding.weblate.p2.prelink": {
+    "message": "Puedes"
+  }
+}

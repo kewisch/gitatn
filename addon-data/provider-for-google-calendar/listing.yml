@@ -1,0 +1,29 @@
+name: Provider for Google Calendar
+summary: Provider for Google Calendar connects Thunderbird with Google Calendar for full task sync, conference details, and scheduling support. It offers deeper integration than Thunderbird’s native support using Google’s official API.
+description: |
+  This extension provides a deeper integration of Google Calendar into Thunderbird. In addition to events, this add-on will show Google Tasks right within Thunderbird. There are some practical features such as joining the video conferences quicker, and showing more information in the event dialog.
+  
+  Please read the FAQ for frequent questions and troubleshooting before requesting support or filing a bug.
+  
+  Community Support is available here. If you are certain you found a bug please file an issue.
+author: Philipp Kewisch
+author_url: https://github.com/kewisch
+homepage: https://addons.thunderbird.net/thunderbird/addon/provider-for-google-calendar
+support_url: https://github.com/kewisch/gdata-provider/issues
+license: Mozilla Public License 2.0
+privacy_policy: https://github.com/kewisch/gdata-provider
+categories:
+  - Miscellaneous
+tags:
+  - google
+  - synchronization
+  - productivity
+screenshots:
+  - path: src/onboarding/images/new-calendar.png
+    caption: Creating a new calendar
+  - path: src/onboarding/images/subscribe-calendars.png
+    caption: Subscribing to new calendars
+  - path: src/onboarding/images/task-dialog.png
+    caption: Creating tasks
+icon: src/icon.png
+last_updated: Jun 23, 2026
